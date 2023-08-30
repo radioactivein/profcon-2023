@@ -1,0 +1,364 @@
+@font-face {
+   font-family: 'sf pro display';
+   src: url('../font/SF-Pro-Display-Black.ttf') format('ttf'), /* IE6-IE8 */
+        url('../font/SF-Pro-Display-Bold.ttf') format('ttf'), /* IE6-IE8 */
+        url('../font/SF-Pro-Display-Heavy.ttf') format('ttf'), /* IE6-IE8 */
+        url('../font/SF-Pro-Display-Medium.ttf') format('ttf'), /* IE6-IE8 */
+        url('../font/SF-Pro-Display-Regular.ttf') format('ttf'), /* IE6-IE8 */
+ }
+@font-face {
+ font-family: 'sf pro text';
+ src: url('../font/sf-pro-text-bold.ttf') format('ttf'), /* IE6-IE8 */
+      url('../font/sf-pro-text-heavy.ttf') format('ttf'), /* IE6-IE8 */
+      url('../font/sf-pro-text-light.ttf') format('ttf'), /* IE6-IE8 */
+      url('../font/sf-pro-text-medium.ttf') format('ttf'), /* IE6-IE8 */
+      url('../font/sf-pro-text-semibold.ttf') format('ttf'), /* IE6-IE8 */  
+      url('../font/SF-Pro-Text-Regular.otf') format('otf'), /* IE6-IE8 */  
+}  
+
+/* @media screen and (max-width:376){
+   .commitments-title h1{
+      font-size: 30px;
+   }
+} */
+@media screen and (max-width:425px){
+      .dcontent p{
+         font-size: 20px;
+      }
+
+      .invite-text h4{
+         font-size: 15px;
+      }
+      .highlight-text {
+         justify-content: flex-start;
+      }
+      .highlight-text h1{
+         font-size: 50px;
+      }
+      .highlight-text-card div{
+         padding: 25px 50px;
+      }
+      .highlight-text-card div h2{
+         font-size: 40px;
+      }
+      .highlight-text-card div p{
+         font-size:14px ;
+      }
+
+      /* .commitments-title h1{
+         font-size: 40px;
+      } */
+}
+
+
+@media screen and (max-width:768px){
+     /* NAV SECTION START */
+
+     .toggle-icon{
+        position: relative;
+        z-index: 3;
+        cursor: pointer;
+        display: block;
+     }
+     .toggle-icon span{
+        display: block;
+        margin: 7px 0;
+        height: 3px;
+     }
+     .toggle-icon span:nth-child(1){
+        background-color: #000000;
+        width: 36px;
+        transition: 0.4s ease-in-out;
+        border-radius: 3px;
+     }
+     .toggle-icon span:nth-child(2){
+        background-color: #000000;
+        width: 27px;
+        transition: 0.4s ease-in-out;
+        transform: translateX(8px);
+        border-radius: 3px;
+     }
+     .toggle-icon span:nth-child(3){
+        background-color: #000000;
+        width: 36px;
+        transition: 0.4s ease-in-out;
+        border-radius: 3px;
+     }
+     .is-active span:nth-child(1){
+        background-color: #000000;
+        width: 36px;
+        transition: 0.4s ease-in-out;
+        transform: rotateZ(45deg);
+        position: absolute;
+        top: 2px;
+        border-radius: 3px;
+     }
+     .is-active span:nth-child(2){
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+     }
+     .is-active span:nth-child(3){
+        background-color: #000000;
+        width: 36px;
+        transition: 0.4s ease-in-out;
+        transform: rotateZ(135deg);
+        position: absolute;
+        top: 2px;
+        border-radius: 3px;
+     }
+    .nav-menu{
+        background-color: #fff;
+        position: absolute;
+        top: 0px;
+        right: 0rem;
+        height: 100vh;
+        width: 100%;
+        display: none;
+        justify-items: center;
+        align-items: center;
+        /* transform: translateX(100%); */
+        transition: 0.3s ease-in-out;
+        padding: 0rem 3rem;
+        border-radius: 0;
+    }
+    .nav-active{
+        /* transform: translateX(0%); */
+        display: grid;
+    }
+    .reg-bt{
+        display: none;
+    }
+    .nav-menu ul{
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    .toggle-icon{
+      right: 20px;
+    }
+    .logo img{
+      height: 50px;
+   }
+   .regbt-none{
+      display: flex;
+   }
+
+    /* BANNER TEXT  START  */
+    .banner-text{
+      top: -235px;
+    }
+      .banner-text .item1{
+         display: none;
+      }
+
+    /* SLIDER POINTS  START  */
+    .carousal-points div{
+      padding: 10px 40px;
+    }
+
+    /* HIGHLIGHT SECTION START  */
+   .highlight-text h1{
+      font-size: 60px;
+   }
+   .highlight-text-card h2{
+      font-size: 40px;
+   }
+    .left-points,
+    .right-points{
+      align-items: center;
+    }
+
+    /* COMMITMENTS SECTION START  */
+   .dcontent{
+      padding: 31px 10px;
+      font-size: 15px;
+   }
+
+   /* INVITE SECTION START  */
+   .invite-text h1{
+      text-align: center;
+      font-size: 50px;
+   }
+}
+
+@media screen and (max-width:992px){
+   .reg-bt a:nth-child(2){
+      display: none;
+   }
+   .reg-bt a:nth-child(1){
+      background-color: red;
+      color: white !important;
+      outline: none;
+   }
+}
+
+
+@media screen and (max-width:1023px){
+
+   /* BANNER TEXT  START  */
+   .banner-text{
+      top: -235px;
+    }
+
+   /* POINTS SECTION START  */
+  .points li{
+     font-size: 22px;
+  }
+
+   /* INVITE SECTION START  */
+   .invite-text h1{
+      font-size: 60px;
+   }
+}
+
+
+@media screen and (max-width:1400px){
+  .highlight-text{
+     padding: 0;
+  }
+}
+
+
+
+
+
+
+@media screen and (min-width:767px){
+   
+   /* HIGHLIGHT SECTION START  */
+  
+  .highlight-text-card div{ 
+     padding: 40px 80px;
+  }
+  .highlight-text-card div h2{
+     font-size: 70px;
+  }
+   .highlight-text-card p{
+     font-size: 20px;
+ }
+
+}
+@media screen and (min-width:768px) and (max-width:993px){
+   .container{
+       max-width: 993px !important;
+       padding: 0 30px !important;
+   }
+   .logo{
+       width: 200px !important;
+    }   
+    .nav-menu{
+       padding: 13px 20px !important;
+    }
+    .reg-bt a:nth-child(1){
+       padding: 10px 10px !important;
+    }
+
+    .banner-text .item1 img{
+      width: 80%;
+    }
+
+    /* COMMITMENTS START */
+    .dcontent{
+       padding: 15px 20px  !important;
+       font-size: 16px;
+    }
+
+   /* INVITE TEXT START */
+    .invite-text h4{
+      font-size: 15px;
+    }
+
+
+}
+/* @media screen and (min-width:768px) and (max-width:880px){
+   .container{
+       padding: 10px !important;
+   }
+   .points{
+      padding: 30px;
+   }
+} */
+@media screen and (min-width:994px) and (max-width:1200px){
+    .container{
+        max-width: 1200px;
+    }
+     .logo{
+        width: 230px !important;
+     }   
+     .nav-menu{
+        padding: 13px 20px !important;
+     }
+     .reg-bt a:nth-child(1){
+        padding: 10px 10px;
+     }
+  
+     /* COMMITMENTS START */
+     .dcontent{
+        padding: 20px 25px ;
+        font-size: 18px;
+     }
+
+}
+
+
+
+
+
+
+@media screen and (min-width:310px) and (max-width:425px){
+   .head-title{
+    font-size: 45px;
+   }
+
+    /* SLIDER POINTS  START  */
+    .carousal-points div{
+      padding: 10px 10px;
+      font-size: 20px;
+    }
+    
+    /* COMMITMENTS SECTION  START  */
+   .commitments-title h1{
+      font-size: 44px;
+   }
+
+    /* INVITE SECTION  START  */
+   .invite-text h1{
+      font-size: 44px;
+   }
+
+
+}
+
+
+@media screen and (min-width:425px) and (max-width:768px){
+   .head-title{
+    font-size: 60px;
+   }
+   .commitments-title h1{
+      font-size: 60px;
+   }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+   .head-title{
+    font-size: 70px;
+   }
+
+   
+}
+
+@media screen and (min-width:1024px){
+
+   .head-title{
+    font-size: 90px;
+   }
+
+   .commitments-title h1{
+      text-align: center;
+      font-size: 80px;
+   }
+}
+
+
+
+
