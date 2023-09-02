@@ -141,7 +141,12 @@
    }
    .regbt-none{
       display: flex;
+      flex-direction: column;
+      gap: 5px;
    }
+   .reg-bt2{
+      flex-direction: row;
+  }
 
     /* BANNER TEXT  START  */
     .banner-text{
@@ -324,6 +329,14 @@
     /* INVITE SECTION  START  */
    .invite-text h1{
       font-size: 44px;
+   }
+
+   .points li{
+      font-size: 15px;
+   }
+   .points li img{
+      width: 30px;
+      height: 30px;
    }
 
 

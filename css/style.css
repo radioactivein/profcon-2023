@@ -21,6 +21,7 @@ body{
     margin: 0;
     font-family: 'sf pro display';
     overflow-x: hidden !important;
+    transition: 0.5s ease-in;
 }
 h1{
     font-family: 'sf pro display';
@@ -67,7 +68,8 @@ ul{
 .nav-menu{
     height: max-content;
     padding: 15px 30px !important;
-    background: #F5F5F5;
+    /* background: #F5F5F5; */
+    background: #eaeaea;
     border-radius: 150px;
     position: relative;
 } 
@@ -562,7 +564,8 @@ ul{
 
   .news-items div{
     padding: 15px;
-    border: solid black 2px;
+    border: solid rgba(12, 0, 138, 0.359) 2px;
+    box-shadow: -10px -13px 12px -7px rgba(0,0,0,0.1);
     border-radius: 15px;
   }
   .news-items div img{
@@ -571,3 +574,90 @@ ul{
 
 
 
+  /* JOIN US BUTTON START */
+#joinus{
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    background-color: rgb(17, 0, 165);
+    /* height: 50px;
+    width: 50px; */
+    /* width: max-content; */
+    width: 140px;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 8px;
+    color: white;
+    z-index: 1000;
+    transition: 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+    /* width: 130px; */
+    
+  }
+  .joinus{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    transition: 0.3s;
+    /* transform: translate(30px,0); */
+  }
+  
+  #joinus:hover{
+    background-color: #c60000;
+    /* width: 190px; */
+    align-items: center;
+  }
+  .joinus > div{
+    width: max-content;
+    transition: 0.5s;
+  }
+  .joinus > i{
+    font-size: 30px;
+    padding: 0 33px;
+    /* margin-right: -12px; */
+  }
+  
+  #joinus:hover .joinus{
+    transform: translate(0,0);
+  }
+/* shiny button */
+.btn-11 {
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  .btn-11:hover {
+     background: #000;
+    color: #fff;
+  }
+  .btn-11:before {
+      position: absolute;
+      content: '';
+      display: inline-block;
+      top: -180px;
+      left: 0;
+      width: 30px;
+      height: 100%;
+      background-color: #fff;
+      animation: shiny-btn1 3s ease-in-out infinite;
+  }
+  .btn-11:active{
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+  }
+  @keyframes shiny-btn1 {
+      0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+      80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+      81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+      100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+  }
+  .jointext a{
+    color: white !important;
+  }
+  
